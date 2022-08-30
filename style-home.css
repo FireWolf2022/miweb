@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(img/2.jpg);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1{
+    margin-top: 30px;
+}
+
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    margin: 15px;
+}
+
+.logo-img{
+    margin-right: 50px;
+    width: 300px;
+    height: 200px;
+}
+.logo-jack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.descripcion-jack{
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.valor-cartas img{
+    width: 998px;
+    height: 474px;
+}
+
+.valor-cartas{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pedir-cartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pedir-cartas p{
+    padding: 15px;
+    max-width: 600px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0.5)
+}
+
+.plantarse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.plantarse p{
+    padding: 15px;
+    max-width: 600px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0.5)
+}
+
+.dividir-separar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.dividir-separar p{
+    max-width: 900px;
+}
+
+.logo-bingo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.logo-bingo img{
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+}
+
+.text-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-logo p{
+    max-width: 500px;
+    margin-top: 15px;
+}
+
+.foto-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.foto-text img{
+    width: 400px;
+    height: 400px;
+    margin-right: 45px;
+    margin-left: 5px;
+}
+
+.foto-text p{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.texto-logo{
+    max-width: 400px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.logo-js-bingo{
+    width: 50px;
+    height: 40px;
+}
+
+.premios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numeros-letras{
+    display: flex;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.numeros, .letras{
+    margin: 20px;
+}
+
+.numeros p, .letras p{
+    margin: 8px 0;
+}
+
+.logo-joker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-joker h1{
+    margin-right: 100px;
+}
+
+.joker-png{
+    width: 350px;
+    height: 250px;
+    margin: 100px 70px;
+}
+
+.proximamente-joker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-football{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+
+.logo-football h1{
+    margin-right: 170px;
+}
+
+.football-png{
+    width: 700px;
+    height: 400px;
+}
+
+.proximamente-football{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo-mono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+.logo-mono h1{
+    margin-left:150px;
+}
+
+
+.mono-png{
+    width: 500px;
+    height: 400px;
+}
+
+.proximamente-mono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.prox-general{
+    width: 700px;
+}
+
+.tuercas-general{
+    width: 450px;
+    height: 200px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+
+@media (max-width:1024px){
+    .valor-cartas{
+        display: none;
+    }
+    p{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    @media (max-width:767px){
+        .prox-general{
+            width: 90vw;
+        }
+        .logo-jack, .logo-joker, .logo-bingo, .logo-football, .logo-mono{
+            flex-direction: column;
+        }
+        .logo-joker h1, .logo-football h1, .logo-mono h1{
+            margin: 0 0;
+        }
+
+        .football-png{
+            height: 300px;
+        }
+
+        .foto-text{
+            flex-direction: column;
+        }
+
+        .football-png, .mono-png, .joker-png{
+            width: 100vw;
+            margin:50px 0;
+        }
+
+        .tuercas-general{
+            width: 90vw;
+        }
+
+        .foto-text img{
+            width: 75vw;
+            margin: 0 0 30px 0;
+        }
+        @media (max-width:675px){
+            .foto-text img{
+                width: 85vw;
+            }
+        }
+        @media (max-width:500px){
+            .foto-text img{
+                width: 95vw;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width:420px){
+    .foto-text img{
+        height: 320px;
+    }
+}
+
+@media (max-width:360px){
+    .participantes{
+        height:250px;
+    }
+}
+
+@media (max-width: 300px){
+    .numeros-letras{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:240px){
+    .logo-bingo{
+        margin: 0;
+    }
+}

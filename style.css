@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#logo-vector, #logo-js{
+    width: 340px;
+    height: 310px;
+    margin-bottom: 30px;
+}
+
+#logo-js{
+    width: 350px;
+    height: 280px;
+}
+
+.logos{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informe-tecnico h1, h2{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.informe-tecnico h2{
+    color: rgb(87, 88, 89);
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.informe-tecnico h1{
+    margin-bottom: 20px;
+    text-shadow: 1.5px 2.5px 0px white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin: 0 7px;
+    font-size: 18px;
+}
+
+.informacion{
+    max-width: 850px;
+    margin: 50px auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.logo-textos{
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.logos-internos{
+    display: flex;
+    flex-direction: column;
+}
+
+.segundo{
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+
+.logos-internos-tamaño{
+    width: 180px;
+    height: 100px;
+}
+
+.text{
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media (max-width:700px){
+    .logos-internos-tamaño{
+    width: 130px;
+    height: 100px;
+    }
+
+    @media (max-width:523px){
+        .logos-internos{
+            display: none;
+        }
+
+        .informe-tecnico h1{
+            font-size: 39px;
+        }
+        .informe-tecnico h2{
+            font-size: 36px;
+        }
+    }
+
+    @media (max-width: 375px){
+        .informe-tecnico h1{
+            font-size: 33px;
+        }
+        .informe-tecnico h2{
+            font-size: 28px;
+        }
+
+        #logo-vector, #logo-js{
+            width: 300px;
+            height: 310px;
+            margin-bottom: 30px;
+        }
+        
+        #logo-js{
+            width: 305px;
+            height: 280px;
+        }
+    }
+    @media (max-width:310px){
+        #logo-vector, #logo-js{
+            width: 100%;
+            height: 310px;
+            margin-bottom: 30px;
+        }
+        
+        #logo-js{
+            width: 100%;
+            height: 280px;
+        }
+
+        .informe-tecnico h1{
+            font-size:28px
+        }
+        .informe-tecnico h2{
+            font-size: 24px;
+        }
+    }
+}
