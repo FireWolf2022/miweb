@@ -146,6 +146,20 @@ h2{
     border: 1px solid rgb(255, 255, 255);
     padding: 15px;
     background-color: rgba(0,0,0,0.5);
+    max-width: 350px;
+}
+
+.foto-text .token img{
+    width: 350px;
+    height: 270px;
+    margin: 0;
+}
+
+.token{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .texto-logo{
@@ -274,6 +288,9 @@ h2{
     }
 
     @media (max-width:767px){
+        .foto-text .token img{
+            display: none;
+        }
         .prox-general{
             width: 90vw;
         }
