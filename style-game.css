@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    background-image: linear-gradient(0deg, rgba(0,0,0,.7),rgba(0,0,0,.7))
+    ,url(img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    margin-top: 50px;
+}
+
+.content{
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.black-jack, .bingo, .joker, .football, .mono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+} 
+
+a{
+    text-decoration: none;
+}
+
+.black-jack h2:hover{
+    color: rgba(250,250, 250,0.8);
+}
+.bingo h2:hover{
+    color: rgba(250,250, 250,0.8);
+}
+.joker h2:hover{
+    color: rgba(250,250, 250,0.8);
+}
+.football h2:hover{
+    color: rgba(250,250, 250,0.8);
+}
+.mono h2:hover{
+    color: rgba(250,250, 250,0.8);
+}
+
+
+.black-jack img{
+    width: 440px;
+    margin-right: 50px;
+}
+
+.bingo img{
+    width: 300px;
+    margin-right: 50px;
+}
+
+.joker img{
+    width: 450px;
+    margin-right: 50px;
+}
+
+.football img{
+    width: 650px;
+}
+.football h2{
+    margin-right: 40px;
+}
+
+.mono img{
+    width: 480px;
+    margin-right: 50px;
+}
+.mono{
+    margin-top: 40px;
+}
+
+@media (max-width:800px){
+    .black-jack, .bingo, .joker, .football, .mono{
+        flex-direction: column;
+
+    }
+    .black-jack img, .bingo img, .joker img, .football img, .mono img{
+        margin: 0 10px;
+    }
+
+    .football h2{
+        margin: 0;
+    }
+}
+@media(max-width:650px){
+    .mono img{
+        width: 400px;
+    }
+    .football img{
+        width: 500px;
+    }
+    @media(max-width:510px){
+        .football img{
+            width: 400px;
+        }
+    }
+    @media(max-width:485px){
+        .black-jack img, .bingo img, .joker img, .football img, .mono img{
+            width: 100%;
+        }
+    }
+}
